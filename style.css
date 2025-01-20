@@ -5,9 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #111;
     color: #fff;
   }
@@ -19,29 +17,53 @@ body {
   }
   
   h1 {
-    font-size: 3em;
+    font-size: 2.5rem;
   }
   
   section {
     padding: 20px;
   }
   
-  #imageContainer {
-    text-align: center;
+ #apod_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  }
+
+h2 {
+    font-size: 1.5rem;
   }
   
   img {
-    max-width: 100%;
-    height: auto;
+    max-width: 90%;
+    max-height: 500px;
     border-radius: 10px;
   }
-  
-  ul {
+
+.apod_container__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#container_asteroids > h2, p {
+  margin-bottom: 5px;
+}
+
+#container_asteroids > p {
+  font-size: 1.2rem;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
+}
   
-  li {
+li {
     background-color: #333;
     margin: 10px 0;
     padding: 10px;
@@ -49,5 +71,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-  
+}
+
+li > span {
+  cursor: pointer;
+  font-weight: 700;
+  color: #0869B4;
+}

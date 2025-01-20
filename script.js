@@ -47,6 +47,10 @@ fetch(neowsUrl)
             span.innerText = `Para saber mais sobre esse asteroide, acesse: ${linkInformations}`
             asteroidsList.appendChild(li);
             li.appendChild(span);
+
+            span.addEventListener('click', function() {
+                window.location.href = linkInformations;
+            });
         });
     }
 })
